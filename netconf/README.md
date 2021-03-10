@@ -1,7 +1,7 @@
 # Netconf
 Für die Interaktion via Netconf-API initialisiert der Client die SSH-Session zum Server und signalisiert das auf Basis von Netconf kommuniziert werden soll. Auf der CLI im Labor ist ein entsprechender Befehl:
 ```
-ssh <USER>@<DEVICE_IP> -p 830 -s netconf
+ssh <USER>@<DEVICE_IP> -s netconf
 ```
 Die genauen Parameter könner allerdings je nach Server-Implementierung und Konfiguration auch andere sein.
 
