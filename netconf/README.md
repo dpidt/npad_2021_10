@@ -17,5 +17,5 @@ ssh -l admin 192.168.181.24 -s netconf
 ```
 ### Teil 2
 - Öffnen sie zusätzlich zu einer Netconf-Session, z. B. in einem zweiten Terminal, eine klassische CLI Verbindung.
-- Wechseln Sie dort mit `xmlin` in den XML-Config-Modus und generieren sie mittels der Befehle `configure terminal`, `interface ethernet 1/XX`, `description MeinName`, `exit`, `exit` einen XML-String für Netconf. Ersetzen Sie dabei XX durch eine beliebige Interface-Nummer.
+- Wechseln Sie dort mit `xmlin` in den XML-Config-Modus und generieren sie mittels der Befehle `configure terminal`, `interface ethernet 1/XX`, `description MeinName`, `exit`, `exit` einen XML-String für Netconf. Ersetzen Sie dabei XX durch eine beliebige Interface-Nummer. Jede KOmbination aus zwei Ziffern sollte funktionieren.
 - Nutzen Sie diesen um, über die Netconf-Session die Interface-Beschreibung zu konfigurieren.
