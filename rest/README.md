@@ -22,7 +22,14 @@ sudo snap install postman
 ```
 
 ## Übung 1
-Nutzen sie die CORONA-API um mit Postman die Daten für einen Landkreis Ihrer Wahl abzufragen. Dazu benötigen sie die ersten fünf Ziffern des Allgemeinen Gemeinde Schlüssel (AGS) z.B. aus:
+Nutzen sie die CORONA-API um mit Postman die Daten für einen Landkreis Ihrer Wahl abzufragen.
+
+Der Endpunkt dazu ist ersichtlich aus der entsprechenden Dokumentation:
+'''
+https://api.corona-zahlen.org/docs/endpoints/districts.html#districts-ags
+'''
+
+Dort benötigen sie die ersten fünf Ziffern des Allgemeinen Gemeinde Schlüssel (AGS) z.B. aus:
 '''
 https://www.riserid.eu/data/user_upload/downloads/info-pdf.s/Diverses/Liste-Amtlicher-Gemeindeschluessel-AGS-2015.pdf
 '''
