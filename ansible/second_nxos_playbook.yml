@@ -1,0 +1,16 @@
+---
+
+- name: NXOS mit Inventory Playbook
+  connection: network_cli
+  gather_facts: false
+  hosts: nxos
+
+  tasks:
+
+    - name: Informationen sammeln
+      nxos_facts:
+        gather_subset: all
+
+    - name: Einige Informationen darstellen
+      debug:
+        msg: "The hostname is {{ ansible_net_hostname }}, the OS is {{ ansible_net_version }}, Vlans existing on the device {{ ansible_net_vlan_list }}."

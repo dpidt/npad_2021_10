@@ -1,0 +1,2 @@
+ansible-playbook -i 192.168.181.21, -u admin -k -e ansible_network_os=nxos first_nxos_playbook.yml
+ansible-playbook -i inventory -k second_nxos_playbook.yml

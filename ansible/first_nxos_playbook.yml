@@ -1,0 +1,14 @@
+---
+
+- name: Das erste Netzwerk Playbook
+  connection: network_cli
+  gather_facts: false
+  hosts: all
+  tasks:
+    - name: Informationen sammeln
+      nxos_facts:
+        gather_subset: all
+
+    - name: Einige Informationen darstellen
+      debug:
+        msg: "The hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }}"
