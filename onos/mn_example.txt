@@ -1,0 +1,5 @@
+***Installation Mininet***
+sudo apt install mininet
+
+***Starten des Interaktiven Labors***
+sudo mn --custom ./mytop.py --topo mytopo --controller=remote,ip=172.17.0.2,port=6653 --switch ovsk,protocols=OpenFlow13
