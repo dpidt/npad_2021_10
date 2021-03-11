@@ -1,0 +1,23 @@
+---
+
+- name: Clean vlans
+  connection: network_cli
+  gather_facts: false
+  hosts: nxos
+
+  tasks:
+
+    - name: Declare Vlans
+      nxos_vlan:
+        aggregate:
+          - vlan_id: 1
+          - vlan_id: 21
+        purge: yes
+
+    - name: Get Infos for NXOS devices
+      nxos_facts:
+        gather_subset: all
+    
+    - name: Display vlans
+      debug:
+        msg: "Vlans existing on the device {{ ansible_net_vlan_list }}"
