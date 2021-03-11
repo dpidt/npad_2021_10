@@ -1,5 +1,5 @@
 ![git](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png)
-# Git - Übung
+# Git - Bonusübung
 ## Teil 1
 - Installieren Sie ggf. `git` und konfigurieren Sie einen lokalen Benutzer
 - Legen Sie im Dateisystem einen neuen Ordner mit beliebigem Namen (z . B. `gitproject`) an und initialisieren Sie dieses als git-Repository.

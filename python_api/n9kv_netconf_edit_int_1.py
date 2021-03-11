@@ -21,7 +21,7 @@ def main():
               <interface>
                   <name>eth1/33</name>
                   <config>
-                      <description>NEW INPUT</description>
+                      <description>DANIEL</description>
                   </config>
               </interface>
           </interfaces>
